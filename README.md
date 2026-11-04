@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/AGBARALAB/AGBARALAB/main/agbaralab_logo_256x256.png" alt="AGBARALAB Logo" width="180"/>
+  <img src="https://raw.githubusercontent.com/AGBARALAB/AGBARALAB/main/agbaralab_logo_512x512.png" alt="AGBARALAB Logo" width="200"/>
 
   # AGBARALAB
 
