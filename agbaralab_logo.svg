@@ -1,0 +1,64 @@
+<svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7E290"/>
+      <stop offset="35%" stop-color="#C89B3C"/>
+      <stop offset="70%" stop-color="#E8C87A"/>
+      <stop offset="100%" stop-color="#8A6E2F"/>
+    </linearGradient>
+    <linearGradient id="goldA" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F7E290"/>
+      <stop offset="100%" stop-color="#C89B3C"/>
+    </linearGradient>
+    <radialGradient id="field" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0d1424"/>
+      <stop offset="100%" stop-color="#020408"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="256" height="256" fill="#050505"/>
+
+  <!-- Outer gold rim -->
+  <circle cx="128" cy="128" r="120" fill="url(#gold)"/>
+
+  <!-- Inner field -->
+  <circle cx="128" cy="128" r="110" fill="url(#field)" stroke="#0EA5E9" stroke-width="2"/>
+
+  <!-- Milled edge detail -->
+  <circle cx="128" cy="128" r="115" fill="none" stroke="#050505" stroke-width="3" stroke-dasharray="6 6"/>
+
+  <!-- Subtle hex grid -->
+  <g stroke="#1e3a5f" stroke-width="1.5" fill="none" opacity="0.3">
+    <polygon points="128,42 157,59 157,93 128,110 99,93 99,59"/>
+    <polygon points="128,110 157,127 157,161 128,178 99,161 99,127"/>
+    <polygon points="128,178 157,195 157,229 128,246 99,229 99,195"/>
+    <polygon points="76,74 99,93 99,127 76,146 53,127 53,93"/>
+    <polygon points="180,74 203,93 203,127 180,146 157,127 157,93"/>
+    <polygon points="76,146 99,161 99,195 76,214 53,195 53,161"/>
+    <polygon points="180,146 203,161 203,195 180,214 157,195 157,161"/>
+  </g>
+
+  <!-- Central A + infinity monogram -->
+  <g transform="translate(128, 128)">
+    <!-- A legs -->
+    <path d="M 0 -65 L -40 55 L -62 78 L -28 78 L -10 55 L 0 30 L 10 55 L 28 78 L 62 78 L 40 55 Z"
+          fill="url(#goldA)"/>
+
+    <!-- Infinity crossbar -->
+    <path d="M -42 -5
+             C -62 -28, -22 -38, 0 -5
+             C 22 -38, 62 -28, 42 -5
+             C 22 18, -8 18, 0 -5
+             C -8 18, -22 18, -42 -5 Z"
+          fill="#0EA5E9"/>
+
+    <!-- Infinity cutout -->
+    <path d="M -28 -5
+             C -38 -16, -16 -22, -8 -5
+             C -2 10, 2 10, 8 -5
+             C 16 -22, 38 -16, 28 -5
+             C 18 6, 4 6, 0 -5
+             C -4 6, -18 6, -28 -5 Z"
+          fill="#050505"/>
+  </g>
+</svg>
